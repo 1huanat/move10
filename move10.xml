@@ -1,1 +1,51 @@
-<xml xmlns="http://www.w3.org/1999/xhtml"></xml>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="controls_whileUntil" id="50" inline="false" x="-761" y="121">
+    <field name="MODE">WHILE</field>
+    <value name="NUMBER">
+      <block type="sensor_button" id="132">
+        <field name="OBJECT">ENTER</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="controls_if" id="161" inline="false">
+        <mutation elseif="1"></mutation>
+        <value name="IF0">
+          <block type="logic_compare" id="404" inline="true">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="sensor_object" id="178">
+                <field name="OBJECT">RIGHTFRONT</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="413">
+                <field name="NUM">65</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="movement_right" id="203"></block>
+        </statement>
+        <value name="IF1">
+          <block type="logic_compare" id="405" inline="true">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="sensor_object" id="220">
+                <field name="OBJECT">LEFTFRONT</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="414">
+                <field name="NUM">65</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO1">
+          <block type="movement_right" id="230"></block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+</xml>
