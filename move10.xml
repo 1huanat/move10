@@ -43,18 +43,17 @@
           </block>
         </value>
         <statement name="DO1">
-          <block type="movement_right" id="230">
-            <next>
-              <block type="robot_delay" id="449" inline="true">
-                <value name="DELAY">
-                  <block type="math_number" id="450">
-                    <field name="NUM">1000</field>
-                  </block>
-                </value>
-              </block>
-            </next>
-          </block>
+          <block type="movement_right" id="230"></block>
         </statement>
+        <next>
+          <block type="robot_delay" id="449" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="450">
+                <field name="NUM">200</field>
+              </block>
+            </value>
+          </block>
+        </next>
       </block>
     </statement>
     <next>
